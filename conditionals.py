@@ -7,6 +7,7 @@ elif name == "Mariah":
     print("You're not Mariah!")
 elif name == "Kingston":
     print("Hi, {}, let's have lunch soon!".format(name))
+elif name == "Inna":
+    print("Hi, {}, finally you came!".format(name))
 else:
     print("Have a nice day!")
-
