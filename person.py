@@ -58,6 +58,9 @@ class Enemy(Person):
         super().__init__(first_name, last_name, health, status)
         self.weapon = weapon
 
+    def introduce(self):
+        print("You are my mortal enemy!!!")
+
     def hurt(self, other):
         if self.weapon == "rock":
             other.health -= 10
@@ -80,4 +83,4 @@ Alex.hurt(Maria)
 Alex.insult(Maria)
 Alex.insult(Lee)
 Alex.steal(Lee)
-
+Alex.introduce()
