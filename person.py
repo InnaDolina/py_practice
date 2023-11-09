@@ -51,6 +51,8 @@ Olga.status_change()
 Lee.introduce()
 Lee.status_change()
 
+
+# inheritance example
 class Enemy(Person):
     def __init__(self, weapon, first_name, last_name, health, status):
         super().__init__(first_name, last_name, health, status)
@@ -70,7 +72,7 @@ class Enemy(Person):
     def steal(self, other):
         print("Ha ha ha, I have your stuff {}!".format(other.first_name))
         if other.status == True:
-            status = False
+            other.status = False
 
 
 Alex = Enemy("rock", "Alex", "Wayne", 75, status=False)
