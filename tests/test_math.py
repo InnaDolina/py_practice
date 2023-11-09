@@ -7,4 +7,3 @@ def test_one_plus_two():
     b = 2
     c = 0
     assert a + b == c
-
